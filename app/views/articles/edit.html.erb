@@ -1,0 +1,14 @@
+<h1>Edit the article details</h1>
+<br>
+<hr>
+
+<%= form_for @article do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+  <%= f.label :content %>:
+  <%= f.text_field :content %>
+  <%= f.submit "Update Article!" %>
+<% end %>
+
+<hr>
+<%= link_to "Back to all articles", articles_path %>
